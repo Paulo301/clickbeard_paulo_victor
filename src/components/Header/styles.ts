@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import { cssVar, transparentize } from "polished";
+import { transparentize } from "polished";
+import { rootColors } from "../../styles/global";
 
 export const Container = styled.header`
   max-width: 1600px;
@@ -44,12 +45,12 @@ export const Container = styled.header`
       li {
         a {
           text-decoration: none;
-          color: var(--text-primary);
+          color: ${rootColors.textPrimary};
 
           transition: color 0.2s;
 
           &:hover {
-            color: ${transparentize(0.3, `${cssVar('--text-primary')}`)};
+            color: ${transparentize(0.3, rootColors.textPrimary)};
           }
         }
       }

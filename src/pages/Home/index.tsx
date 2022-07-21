@@ -1,4 +1,5 @@
 import { Button } from "../../components/Button";
+import { rootColors } from "../../styles/global";
 import { 
   Container, 
   HomeSection,
@@ -25,7 +26,7 @@ export function Home() {
             </Button>
             <Button
               background='transparent'
-              textColor='var(--button)'
+              textColor={rootColors.button}
             >
               Entrar em contato
             </Button>

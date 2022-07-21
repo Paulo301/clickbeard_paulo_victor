@@ -1,14 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 
+export const rootColors = {
+  white: '#fff',
+
+  background: '#F2F7F2',
+  textPrimary: '#020202',
+  button: '#EE964B'
+}
+
 export const GlobalStyle = createGlobalStyle`
-  :root {
-    --white: #fff;
-
-    --background: #F2F7F2;
-    --text-primary: #020202;
-    --button: #EE964B;
-  }
-
   * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--background);
+    background: ${rootColors.background};
     -webkit-font-smoothing: antialiased;
   }
 

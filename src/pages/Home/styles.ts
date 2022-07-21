@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import backgroundImg from '../../assets/background-image.jpg';
+import { rootColors } from "../../styles/global";
 
 export const Container = styled.main`
   section + section {
@@ -29,7 +30,7 @@ export const HomeSection = styled.section`
 
     background-color: rgba(0,0,0,0.5);
 
-    color: var(--white);
+    color: ${rootColors.white};
 
     h1 {
       font-size: 2.5rem;
@@ -37,6 +38,7 @@ export const HomeSection = styled.section`
 
     p {
       text-align: center;
+      font-size: 0.95rem;
 
       margin-top: 1rem;
 

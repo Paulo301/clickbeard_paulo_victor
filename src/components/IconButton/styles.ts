@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { rootColors } from "../../styles/global";
 
 export const Container = styled.button`
   background: none;
@@ -13,6 +14,6 @@ export const Container = styled.button`
 	}
 
 	svg {
-		color: var(--text-primary);
+		color: ${rootColors.textPrimary};
 	}
 `;
