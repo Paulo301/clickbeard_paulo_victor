@@ -1,7 +1,6 @@
-
-
 import { BiUserCircle } from 'react-icons/bi';
 import logoImg from '../../assets/logo.png';
+
 import { IconButton } from '../IconButton';
 
 import { Container } from './styles';
