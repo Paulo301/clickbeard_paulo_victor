@@ -2,7 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --example: #fff;
+    --background: #F2F7F2;
+    --text-primary: #020202;
   }
 
   * {
@@ -18,10 +19,12 @@ export const GlobalStyle = createGlobalStyle`
     @media (max-width: 720px){
       font-size: 87.5%;
     }
+
+    scroll-behavior: smooth;
   }
 
   body {
-    background: var(--example);
+    background: var(--background);
     -webkit-font-smoothing: antialiased;
   }
 
