@@ -1,46 +1,99 @@
-# Getting Started with Create React App
+<h1 align="center">
+  ClickBeard
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+  Um sistema de agendamento para uma barbearia
+</h3>
 
-## Available Scripts
+<h4 align="center">
+	🚧   Em construção   🚧
+</h4>
 
-In the project directory, you can run:
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre o projeto](#user-content--sobre-o-projeto)
+   * [Funcionalidades](#user-content--funcionalidades)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+     * [Pré-requisitos](#pré-requisitos)
+     * [Rodando a aplicação](#user-content--rodando-a-aplicação)
+   * [Tecnologias](#user-content--tecnologias)
+   * [Autor](#user-content--autor)
+<!--te-->
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Sobre o projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ClickBeard permite que os clientes da barbearia façam seus agendamentos de forma simplificada e proporciona ao administrador um sistema sistema simples de controle dos agendamentos.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Funcionalidades
 
-### `yarn build`
+- [] -
+  - [] -
+  - [] -
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Como executar o projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pré-requisitos
 
-### `yarn eject`
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Yarn](https://yarnpkg.com/), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### ▶️ Rodando a aplicação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Clone este repositório
+$ git clone https://github.com/Paulo301/clickbeard_paulo_victor.git
 
-## Learn More
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd clickbeard_paulo_victor
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Instale as dependências
+$ yarn install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
+```
+
+---
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+-   **[React](https://reactjs.org/)**  
+-   **[TypeScript](https://www.typescriptlang.org/)**
+-   **[Styled Components](https://styled-components.com/)**
+-   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[Axios](https://github.com/axios/axios)**
+-   **[React Hook Form](https://react-hook-form.com/)**
+-   **[React Router](https://reactrouter.com/)**
+
+> Veja o arquivo  [package.json](https://github.com/Paulo301/clickbeard_paulo_victor/blob/main/package.json)
+
+#### **Utilitários**
+
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
+
+---
+
+## 👤 Autor
+
+<a href="https://github.com/Paulo301">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51863723?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Paulo Victor</b></sub></a>
+ <br />
+ 
+![Linkedin Badge](https://img.shields.io/badge/-Paulo%20Victor-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/paulo-victor-lemos-de-almeida-569040186/)
