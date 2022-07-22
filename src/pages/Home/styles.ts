@@ -4,6 +4,8 @@ import backgroundImg from '../../assets/background-image.jpg';
 import { rootColors } from "../../styles/global";
 
 export const Container = styled.main`
+  width: 100%;
+  
   section + section {
     max-width: 1600px;
     margin: 0 auto;

@@ -84,6 +84,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### **Utilitários**
 
+-   Fake API:  **[Mirage JS](https://miragejs.com/)**
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
 
 ---

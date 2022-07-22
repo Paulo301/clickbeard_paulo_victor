@@ -27,11 +27,19 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     scroll-behavior: smooth;
+    height: 100%;
   }
 
   body {
     background: ${rootColors.background};
     -webkit-font-smoothing: antialiased;
+    height: 100%;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   body, input, textarea, button {

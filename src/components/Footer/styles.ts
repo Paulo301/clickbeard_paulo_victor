@@ -5,6 +5,7 @@ import { rootColors } from "../../styles/global";
 
 export const Container = styled.footer`
   background: ${rootColors.textSecondary};
+  width: 100%;
 `;
 
 export const Content = styled.div`
@@ -44,5 +45,9 @@ export const Content = styled.div`
 
   section {
     display: flex;
+
+    button + button{
+      margin-left: 0.313rem;
+    }
   }
 `;
