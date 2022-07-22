@@ -7,6 +7,7 @@ import { Header } from "./components/Header";
 import { Routes } from "./routes";
 
 import "react-loading-skeleton/dist/skeleton.css";
+import 'react-modern-drawer/dist/index.css';
 
 import { GlobalStyle } from "./styles/global";
 

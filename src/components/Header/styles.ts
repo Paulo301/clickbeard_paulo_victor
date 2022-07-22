@@ -22,42 +22,6 @@ export const Container = styled.header`
       }
     }
   }
-  
-  nav {
-    float: none;
-    position: absolute;
-    
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    ul {
-      display: flex;
-      list-style: none;
-
-      li {
-        a {
-          text-decoration: none;
-
-          transition: color 0.2s;
-
-          color: ${rootColors.textPrimary};
-
-          &:hover {
-            color: ${transparentize(0.3, rootColors.textPrimary)};
-          }
-        }
-      }
-
-      li + li {
-        margin-left: 1rem;
-      }
-    }
-
-    @media(max-width: 720px) {
-      display: none;
-    }
-  }
 
   section {
     display: flex;
@@ -77,5 +41,75 @@ export const Logo = styled.div`
     width: 9.375rem;
     height: 9.375rem;
     margin-top: 0.5rem;
+  }
+`;
+
+export const Menu = styled.nav`
+  float: none;
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      a {
+        text-decoration: none;
+
+        transition: color 0.2s;
+
+        color: ${rootColors.textPrimary};
+
+        &:hover {
+          color: ${transparentize(0.3, rootColors.textPrimary)};
+        }
+      }
+    }
+
+    li + li {
+      margin-left: 1rem;
+    }
+  }
+
+  @media(max-width: 719px) {
+    display: none;
+  }
+`;
+
+export const MenuMobile = styled.nav`
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+
+    li {
+      a {
+        text-decoration: none;
+
+        button {
+          width: 100%;
+
+          border: 0;
+          background-color: transparent;
+
+          text-align: left;
+          color: ${rootColors.textPrimary};
+
+          transition: color 0.2s, background-color 0.2s;
+
+          &:hover {
+            color: ${transparentize(0.3, rootColors.textPrimary)};
+            background-color: rgba(0, 0, 0, 0.04);
+          }
+
+          padding: 1rem;
+        }
+      }
+    }
   }
 `;
