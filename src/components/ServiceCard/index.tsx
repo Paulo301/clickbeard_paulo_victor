@@ -22,8 +22,11 @@ export function ServiceCard(props: ServiceCardProps) {
       <div>
         { 
           isLoading 
-          ? 
-          <Skeleton circle /> 
+          ?
+          <Skeleton 
+            width='4rem'
+            height='4rem' 
+          /> 
           : 
           <img 
             src={srcImg} 
@@ -32,7 +35,7 @@ export function ServiceCard(props: ServiceCardProps) {
           />
         }
       </div>
-
+        
       <h1>
         {
           isLoading 
