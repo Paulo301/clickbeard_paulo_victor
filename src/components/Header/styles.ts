@@ -104,7 +104,7 @@ export const MenuMobile = styled.nav`
 
           &:hover {
             color: ${transparentize(0.3, rootColors.textPrimary)};
-            background-color: rgba(0, 0, 0, 0.04);
+            background-color: ${rootColors.backgroundButtonHover};
           }
 
           padding: 1rem;

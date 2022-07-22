@@ -14,7 +14,7 @@ export const Container = styled.button<ContainerProps>`
 	transition: background-color 0.2s;
 
 	&:hover {
-		background-color: rgba(0, 0, 0, 0.04);
+		background-color: ${rootColors.backgroundButtonHover};
 	}
 
 	svg {
