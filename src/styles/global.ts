@@ -5,6 +5,7 @@ export const rootColors = {
 
   background: '#F2F7F2',
   textPrimary: '#020202',
+  textSecondary: '#77878B',
   button: '#EE964B'
 }
 

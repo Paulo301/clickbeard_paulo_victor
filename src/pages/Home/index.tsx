@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 
 import ScrollContainer from "react-indiana-drag-scroll";
 import { Button } from "../../components/Button";
+import { ServiceCard } from "../../components/ServiceCard";
 import { rootColors } from "../../styles/global";
+
+import mapImg from '../../assets/map.png';
 
 import especialidadeApi, { IEspecialidade } from "../../services/especialidadeApi";
 
@@ -10,9 +13,10 @@ import {
   Container, 
   HomeSection,
   ServicosSection,
-  ContatoSection
+  ContatoSection,
+  ContactInfo,
+  ContactMap
 } from "./styles";
-import { ServiceCard } from "../../components/ServiceCard";
 
 export function Home() {
   const [services, setServices] = useState<IEspecialidade[]>([]);
@@ -76,6 +80,19 @@ export function Home() {
 
       <ContatoSection id='contato'>
         <h1>Contato</h1>
+        <div>
+          <ContactInfo>
+            <strong>Telefone:<span>+55 (99) 9 91817161</span></strong>
+            <strong>WhatsApp:<span>+55 (99) 9 92827262</span></strong>
+            <strong>Email:<span>contato@clickbarber.com</span></strong>
+            <strong>Endereço:<span>Rua 01, 02, Algum Bairro, Alguma Cidade, MA</span></strong>
+          </ContactInfo>
+
+          <ContactMap>
+            <h2>Onde nos encontrar?</h2>
+            <img src={mapImg} alt="Mapa" />
+          </ContactMap>
+        </div>
       </ContatoSection>
     </Container>
   );

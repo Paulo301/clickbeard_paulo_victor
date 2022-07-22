@@ -84,9 +84,49 @@ export const ContatoSection = styled.section`
 
   align-items: center;
 
-  height: 300px;
-
   h1 {
     font-size: 2rem;
+  }
+
+  & > div {
+    display: flex;
+
+    margin-top: 2.5rem;
+  }
+`;
+
+export const ContactInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  strong {
+    font-size: 1rem;
+    color: ${rootColors.textPrimary};
+
+    margin-top: 1rem;
+
+    span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: ${rootColors.textSecondary};
+      
+      margin-left: 0.5rem;
+    }
+  }
+`;
+
+export const ContactMap = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  img {
+    margin: 1.5rem auto 0;
+    width: 80%;
   }
 `;
