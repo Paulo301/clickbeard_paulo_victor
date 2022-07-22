@@ -3,41 +3,21 @@ import styled from "styled-components";
 import { transparentize } from "polished";
 import { rootColors } from "../../styles/global";
 
-export const Container = styled.header`
+export const Container = styled.footer`
+  background: ${rootColors.textSecondary};
+`;
+
+export const Content = styled.div`
   max-width: 1600px;
 
   margin: 0 auto;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
 
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 
-  position: relative;
-
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 4.375rem;
-    width: 9.375rem;
-
-    img {
-      width: 9.375rem;
-      height: 9.375rem;
-      margin-top: 0.5rem;
-    }
-  }
-  
   nav {
-    float: none;
-    position: absolute;
-    
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
     ul {
       display: flex;
       list-style: none;
@@ -60,5 +40,9 @@ export const Container = styled.header`
         margin-left: 1rem;
       }
     }
+  }
+
+  section {
+    display: flex;
   }
 `;

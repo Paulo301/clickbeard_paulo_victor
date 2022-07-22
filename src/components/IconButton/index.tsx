@@ -7,6 +7,7 @@ import { Container } from './styles';
 interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon: IconType;
   size: number;
+  iconColor?: string;
 }
 
 export function IconButton(props: IconButtonProps) {

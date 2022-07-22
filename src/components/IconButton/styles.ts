@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { rootColors } from "../../styles/global";
 
-export const Container = styled.button`
+interface ContainerProps {
+	iconColor?: string;
+}
+
+export const Container = styled.button<ContainerProps>`
   background: none;
 	border: none;
 	padding: 0.125rem;
@@ -14,6 +18,6 @@ export const Container = styled.button`
 	}
 
 	svg {
-		color: ${rootColors.textPrimary};
+		color: ${(props) => props.iconColor ? props.iconColor : rootColors.textPrimary};
 	}
 `;
