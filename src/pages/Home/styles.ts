@@ -31,13 +31,13 @@ export const HomeSection = styled.section`
     background-color: rgba(0,0,0,0.5);
 
     color: ${rootColors.white};
+    text-align: center;
 
     h1 {
       font-size: 2.5rem;
     }
 
     p {
-      text-align: center;
       font-size: 0.95rem;
 
       margin-top: 1rem;
@@ -71,6 +71,8 @@ export const ServicosSection = styled.section`
 
   .scrollContainer {
     display: flex;
+
+    width: 100%;
 
     margin-top: 2.5rem;
     column-gap: 1rem;

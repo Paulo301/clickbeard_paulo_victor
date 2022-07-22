@@ -10,6 +10,7 @@ export const Container = styled.article`
   padding: 4rem 0.625rem 1rem;
   border-radius: 0.5rem;
   width: 16rem;
+  flex-shrink: 0;
 
   img {
     width: 4rem;
