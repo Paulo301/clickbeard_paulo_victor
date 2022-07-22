@@ -11,22 +11,15 @@ export const Container = styled.header`
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   position: relative;
 
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 4.375rem;
-    width: 9.375rem;
-
-    img {
-      width: 9.375rem;
-      height: 9.375rem;
-      margin-top: 0.5rem;
+  button {
+    &:first-child {
+      @media(min-width: 720px) {
+        display: none;
+      }
     }
   }
   
@@ -60,5 +53,29 @@ export const Container = styled.header`
         margin-left: 1rem;
       }
     }
+
+    @media(max-width: 720px) {
+      display: none;
+    }
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+export const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 4.375rem;
+  width: 9.375rem;
+
+  img {
+    width: 9.375rem;
+    height: 9.375rem;
+    margin-top: 0.5rem;
   }
 `;

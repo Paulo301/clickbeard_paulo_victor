@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes, forwardRef } from 'react';
 
 import { IconType } from 'react-icons';
 
@@ -10,7 +10,7 @@ interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   iconColor?: string;
 }
 
-export function IconButton(props: IconButtonProps) {
+export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>((props, ref) => {
   const {
     icon: Icon,
     size,
@@ -20,8 +20,9 @@ export function IconButton(props: IconButtonProps) {
   return (
     <Container
       {...rest}
+      ref={ref}
     >
       <Icon size={size} />
     </Container>
   );
-}
+});

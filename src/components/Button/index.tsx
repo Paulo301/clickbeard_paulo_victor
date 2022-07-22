@@ -5,7 +5,7 @@ import { Container } from "./styles";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   background?: string;
   borderColor?: string;
-  textColor?: string
+  textColor?: string;
 }
 
 export function Button(props: ButtonProps) {
