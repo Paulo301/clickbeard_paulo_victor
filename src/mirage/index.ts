@@ -74,6 +74,7 @@ export function makeServer({ environment = 'test' }) {
       this.get("/usuarios/login", (schema, request) => {
         return [];
       })
+      this.post("/usuarios")
 
       this.get("/agendamentos")
     },
