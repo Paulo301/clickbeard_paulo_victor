@@ -96,6 +96,10 @@ export const ContatoSection = styled.section`
     display: flex;
 
     margin-top: 2.5rem;
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+    }
   }
 `;
 
@@ -132,5 +136,14 @@ export const ContactMap = styled.div`
   img {
     margin: 1.5rem auto 0;
     width: 80%;
+  }
+
+  @media(max-width: 768px) {
+    margin-top: 2rem;
+  }
+  @media(max-width: 425px) {
+    img {
+      width: 100%;
+    }
   }
 `;
