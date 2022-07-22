@@ -63,9 +63,30 @@ export const ServicosSection = styled.section`
   display: flex;
   flex-direction: column;
 
-  height: 300px;
+  align-items: center;
+
+  & > h1 {
+    font-size: 2rem;
+  }
+
+  .scrollContainer {
+    display: flex;
+
+    margin-top: 2.5rem;
+    column-gap: 1rem;
+    padding: 0.25rem;
+  }
 `;
 
 export const ContatoSection = styled.section`
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
   height: 300px;
+
+  h1 {
+    font-size: 2rem;
+  }
 `;

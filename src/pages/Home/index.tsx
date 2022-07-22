@@ -1,14 +1,30 @@
+import { useEffect, useState } from "react";
+
+import ScrollContainer from "react-indiana-drag-scroll";
 import { Button } from "../../components/Button";
 import { rootColors } from "../../styles/global";
+
+import especialidadeApi, { IEspecialidade } from "../../services/especialidadeApi";
+
 import { 
   Container, 
   HomeSection,
   ServicosSection,
   ContatoSection
 } from "./styles";
-
+import { ServiceCard } from "../../components/ServiceCard";
 
 export function Home() {
+  const [services, setServices] = useState<IEspecialidade[]>([]);
+  const [isServicesLoading, setIsServicesLoading] = useState(true);
+
+  useEffect(() => {
+    especialidadeApi.getEspecialidades().then((data) => {
+      setServices(data.especialidades);
+      setIsServicesLoading(false);
+    }).catch((error) => console.log(error));
+  }, []);
+
   return (
     <Container>
       <HomeSection id='home'>
@@ -35,11 +51,31 @@ export function Home() {
       </HomeSection>
 
       <ServicosSection id='servicos'>
-        servicos
+        <h1>Nosssos serviços</h1>
+
+        <ScrollContainer
+          horizontal
+          hideScrollbars
+          nativeMobileScroll
+          className='scrollContainer'
+        >
+          {
+            isServicesLoading 
+            ?
+            <ServiceCard isLoading={true} service={{} as IEspecialidade} />
+            :
+            services.map((service) => (
+              <ServiceCard 
+                key={service.id}
+                service={service}
+              />
+            ))
+          }
+        </ScrollContainer>
       </ServicosSection>
 
       <ContatoSection id='contato'>
-        contato
+        <h1>Contato</h1>
       </ContatoSection>
     </Container>
   );
