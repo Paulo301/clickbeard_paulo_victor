@@ -14,7 +14,6 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Sobre o projeto](#user-content--sobre-o-projeto)
-   * [Funcionalidades](#user-content--funcionalidades)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
      * [Rodando a aplicação](#user-content--rodando-a-aplicação)
@@ -26,14 +25,6 @@ Tabela de conteúdos
 ## 💻 Sobre o projeto
 
 ClickBeard permite que os clientes da barbearia façam seus agendamentos de forma simplificada e proporciona ao administrador um sistema sistema simples de controle dos agendamentos.
-
----
-
-## ⚙️ Funcionalidades
-
-- [] -
-  - [] -
-  - [] -
 
 ---
 
@@ -79,6 +70,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Axios](https://github.com/axios/axios)**
 -   **[React Hook Form](https://react-hook-form.com/)**
 -   **[React Router](https://reactrouter.com/)**
+-   **[Redux Toolkit](https://redux-toolkit.js.org/)**
 
 > Veja o arquivo  [package.json](https://github.com/Paulo301/clickbeard_paulo_victor/blob/main/package.json)
 
