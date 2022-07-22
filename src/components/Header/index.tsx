@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Drawer from 'react-modern-drawer';
 
@@ -25,6 +25,7 @@ interface HeaderProps {
 
 export function Header(props: HeaderProps) {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false)
   
@@ -72,7 +73,7 @@ export function Header(props: HeaderProps) {
       </Drawer>
 
 
-      <Logo>
+      <Logo onClick={() => navigate('/')}>
         <img src={logoImg} alt="ClickBeard" />
       </Logo>
 
@@ -96,7 +97,7 @@ export function Header(props: HeaderProps) {
         menuButton={<IconButton icon={BiUserCircle} size={36} />} 
         transition
       >
-        <MenuItem>Entrar/Cadastrar</MenuItem>
+        <MenuItem onClick={() => navigate('/login')}>Entrar/Cadastrar</MenuItem>
       </RMenu>
     </Container>
   );

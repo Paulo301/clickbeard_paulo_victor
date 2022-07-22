@@ -11,7 +11,7 @@ export const Container = styled.header`
 
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  width: 100%;
 
   position: relative;
 
@@ -33,6 +33,10 @@ export const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
+
+  overflow: hidden;
 
   height: 4.375rem;
   width: 9.375rem;
